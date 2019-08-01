@@ -1,5 +1,7 @@
 <table border="1">
-    <thead></thead>
+    <thead>
+      {{tableName}}
+    </thead>
     <tr>
       <th>name</th>
       <th>designation</th>
@@ -12,3 +14,8 @@
             </tr>
     </tbody>
       </table>
+      <div>
+        Enter Your name<input type="text" [(ngModel)] = "myName" />
+        Enter Your name color<input type="text" [(ngModel)] = "myNameColor" />
+        Your name is <span [innerHTML] = "myName" [style.color]="myNameColor"></span>
+      </div>

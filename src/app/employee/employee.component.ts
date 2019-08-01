@@ -8,6 +8,9 @@ import { HttpClientService } from '../service/http-client.service';
 })
 export class EmployeeComponent implements OnInit {
 
+  tableName: string = "Employe table";
+  myName="Hey";
+  myNameColor="blue";
   employees:string[];
   constructor(private httpClientService:HttpClientService) { }
 
